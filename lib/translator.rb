@@ -31,7 +31,7 @@ def get_japanese_emoticon(file, emoticon)
       if emoticon == characters
         translated_emoticon = key[value][:japanese]
       else
-        
+        puts "Sorry, that emoticon was not found"
       end
     end
   end  
