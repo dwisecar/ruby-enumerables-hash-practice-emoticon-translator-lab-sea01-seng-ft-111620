@@ -15,13 +15,14 @@ def load_library(file_to_load)
       
       if !final_hash[key]
         final_hash[key] = {}
-        #binding.pry
+        
       end
       if value == value[0]
         final_hash[key] = {:english => element}
       end
       if value == value[1]
         final_hash[key].merge!(japanese: "element")
+        binding.pry
       end
       
     end
