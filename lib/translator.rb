@@ -23,7 +23,16 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   sorted_emoticons = load_library(file)
-  binding.pry
+  
+  translated_emoticon = ""
+  
+  sorted_emoticons.each do |key, value|
+    binding.pry
+  end  
+  
+  
+  
+  
 end
 
 def get_english_meaning
