@@ -30,7 +30,7 @@ def get_japanese_emoticon(file, emoticon)
     if emoticon == value[:english]
       translated_emoticon = value[:japanese]
     else
-      puts "Sorry, that emoticon was not found"
+      translated_emoticon = "Sorry, that emoticon was not found"
     end
   end
   translated_emoticon
