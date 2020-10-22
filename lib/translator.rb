@@ -17,9 +17,9 @@ def load_library(file_to_load)
       if value == value[1]
         final_hash[key].merge!(japanese: "element")
       end
-      
+      binding.pry
     end
-    binding.pry
+    
   end
 end
 
