@@ -26,18 +26,13 @@ def get_japanese_emoticon(file, emoticon)
   
   translated_emoticon = ""
   
-  sorted_emoticons.each do |key, value| #key is angel, value is hash :eng :jap
-     
+  sorted_emoticons.each do |key, value| 
     value.each do |language, characters|
-      binding.pry
       if emoticon == characters
-        translated_emoticon = 
+        translated_emoticon = value[:japanese]
+      end
     end
   end  
-  
-  
-  
-  
 end
 
 def get_english_meaning
