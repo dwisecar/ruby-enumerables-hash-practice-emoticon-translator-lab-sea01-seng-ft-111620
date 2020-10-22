@@ -17,7 +17,7 @@ def load_library(file_to_load)
       :english => value[0],
       :japanese => value[1]
     }
-    binding.pry
+    
   end
   new_emoticons
 end
