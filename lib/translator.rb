@@ -14,7 +14,7 @@ def load_library(file_to_load)
       final_hash[key] = {}
     end
     final_hash[key] = { 
-      :english => value[0]
+      :english => value[0],
       :japanese => value[1]
     }
     binding.pry
