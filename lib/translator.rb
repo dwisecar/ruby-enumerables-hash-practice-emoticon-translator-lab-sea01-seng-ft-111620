@@ -33,7 +33,7 @@ def get_japanese_emoticon(file, emoticon)
     end
   end
   if translated_emoticon == ""
-    puts "Sorry, that emoticon was not found"
+    translated_emoticon = "Sorry, that emoticon was not found"
   end
   translated_emoticon
 end
