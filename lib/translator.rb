@@ -29,7 +29,9 @@ def get_japanese_emoticon(file, emoticon)
   sorted_emoticons.each do |key, value| 
     value.each do |language, characters|
       if emoticon == characters
-        translated_emoticon = value[:japanese]
+        translated_emoticon = key[value][:japanese]
+      else
+        
       end
     end
   end  
