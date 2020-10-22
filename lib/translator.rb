@@ -13,6 +13,9 @@ def load_library(file_to_load)
       if value[0]
         key = {:english => element}
       end
+      if value[1]
+        key = {:japanese => element}
+      end
       binding.pry
     end
   end
