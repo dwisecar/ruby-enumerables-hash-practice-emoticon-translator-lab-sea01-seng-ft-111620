@@ -23,11 +23,8 @@ def load_library(file_to_load)
       end
       if value == value[1]
         final_hash[key].merge!(japanese: "element")
-        
       end
-      
     end
-    
   end
   new_emoticons
 end
