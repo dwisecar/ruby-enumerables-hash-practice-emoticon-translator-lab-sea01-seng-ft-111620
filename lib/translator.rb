@@ -11,7 +11,8 @@ def load_library(file_to_load)
   emoticons.each do |key, value|
     value.each do |element|
       if value[0]
-        
+        key = {:english => element}
+      end
       binding.pry
     end
   end
