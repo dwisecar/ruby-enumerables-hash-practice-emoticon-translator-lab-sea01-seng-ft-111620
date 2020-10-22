@@ -28,7 +28,7 @@ def get_japanese_emoticon(file, emoticon)
   
   sorted_emoticons.each do |key, value| #key is angel, value is hash :eng :jap
      
-    value.each do |element|
+    value.each do |language, characters|
       binding.pry
     end
   end  
