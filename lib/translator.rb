@@ -10,6 +10,7 @@ def load_library(file_to_load)
   emoticons = YAML.load_file(file_to_load)
   emoticons.each do |key, value|
     binding.pry
+  end
 end
 
 def get_japanese_emoticon
