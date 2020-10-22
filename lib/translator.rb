@@ -17,13 +17,13 @@ def load_library(file_to_load)
       :english => value[0],
       :japanese => value[1]
     }
-    
   end
   new_emoticons
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  sorted_emoticons = load_library(file)
+  binding.pry
 end
 
 def get_english_meaning
