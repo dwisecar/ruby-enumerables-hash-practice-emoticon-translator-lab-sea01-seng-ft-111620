@@ -30,6 +30,8 @@ def get_japanese_emoticon(file, emoticon)
      
     value.each do |language, characters|
       binding.pry
+      if emoticon == characters
+        translated_emoticon = 
     end
   end  
   
