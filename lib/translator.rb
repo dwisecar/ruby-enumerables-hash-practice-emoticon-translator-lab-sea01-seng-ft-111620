@@ -15,7 +15,7 @@ def load_library(file_to_load)
         key = {:english => element}
       end
       if value[1]
-        key.merge!(japanese: = "element")
+        key.merge!(japanese: "element")
       end
       binding.pry
     end
