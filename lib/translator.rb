@@ -19,7 +19,7 @@ def load_library(file_to_load)
       end
       if value == value[0]
         final_hash[key] = {:english => element}
-        binding.pry
+        
       end
       if value == value[1]
         final_hash[key].merge!(japanese: "element")
@@ -29,6 +29,7 @@ def load_library(file_to_load)
     end
     
   end
+  new_emoticons
 end
 
 def get_japanese_emoticon
