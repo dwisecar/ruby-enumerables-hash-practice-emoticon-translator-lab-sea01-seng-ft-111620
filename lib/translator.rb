@@ -10,11 +10,12 @@ def load_library(file_to_load)
   emoticons = YAML.load_file(file_to_load)
   emoticons.each do |key, value|
     value.each do |element|
+      binding.pry
       if value[0]
         key = {:english => element}
       end
       if value[1]
-        key.merge {:japanese => element}
+        key.merge!(japanese: = "element")
       end
       binding.pry
     end
