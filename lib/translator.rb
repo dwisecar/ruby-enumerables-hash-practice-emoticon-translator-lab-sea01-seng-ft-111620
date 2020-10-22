@@ -27,7 +27,6 @@ def get_japanese_emoticon(file, emoticon)
   translated_emoticon = ""
   
   sorted_emoticons.each do |key, value| 
-    binding.pry
     if emoticon == value[:english]
       translated_emoticon = value[:japanese]
     end
