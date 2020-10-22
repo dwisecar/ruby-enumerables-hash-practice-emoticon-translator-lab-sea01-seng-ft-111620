@@ -30,11 +30,13 @@ def get_japanese_emoticon(file, emoticon)
     value.each do |language, characters|
       if emoticon == characters
         translated_emoticon = key[value][:japanese]
-      else
-        puts "Sorry, that emoticon was not found"
       end
     end
-  end  
+  end
+  if translated_emoticon = ""
+    puts "Sorry, that emoticon was not found"
+  end
+  translated_emoticon
 end
 
 def get_english_meaning
