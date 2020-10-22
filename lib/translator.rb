@@ -10,6 +10,8 @@ def load_library(file_to_load)
   emoticons = YAML.load_file(file_to_load)
   emoticons.each do |key, value|
     value.each do |element|
+      if value[0]
+        
       binding.pry
     end
   end
