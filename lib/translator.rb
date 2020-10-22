@@ -19,6 +19,7 @@ def load_library(file_to_load)
       end
       
     end
+    binding.pry
   end
 end
 
