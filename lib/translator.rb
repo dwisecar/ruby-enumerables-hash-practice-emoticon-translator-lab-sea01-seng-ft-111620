@@ -36,6 +36,17 @@ def get_japanese_emoticon(file, emoticon)
   translated_emoticon
 end
 
-def get_english_meaning
-  
+def get_english_meaning(file, emoticon_arg)
+    sorted_emoticons = load_library(file)
+    english_meaning = ""
+    
+    sorted_emoticons.each do |happy_key, value| 
+      if emoticon_arg == value[:japanese]
+        english_meaning = happy_key
+      end
+    end
+    if english_meaning == ""
+      english_meaning = "Sorry, that emoticon was not found"
+    end
+    english_meaning
 end
