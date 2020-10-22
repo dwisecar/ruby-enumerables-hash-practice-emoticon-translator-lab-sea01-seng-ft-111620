@@ -27,11 +27,13 @@ def get_japanese_emoticon(file, emoticon)
   translated_emoticon = ""
   
   sorted_emoticons.each do |key, value| 
+    binding.pry
     if emoticon == value[:english]
       translated_emoticon = value[:japanese]
-    else
-      translated_emoticon = "Sorry, that emoticon was not found"
     end
+  end
+  if translated_emoticon = ""
+    puts "Sorry, that emoticon was not found"
   end
   translated_emoticon
 end
