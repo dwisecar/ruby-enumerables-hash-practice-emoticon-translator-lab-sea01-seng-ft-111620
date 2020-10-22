@@ -15,7 +15,7 @@ def load_library(file_to_load)
       
       if !final_hash[key]
         final_hash[key] = {}
-        binding.pry
+        #binding.pry
       end
       if value == value[0]
         final_hash[key] = {:english => element}
