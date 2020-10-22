@@ -9,7 +9,9 @@ def load_library(file_to_load)
   
   emoticons = YAML.load_file(file_to_load)
   emoticons.each do |key, value|
-    binding.pry
+    value.each do |element|
+      binding.pry
+    end
   end
 end
 
